@@ -20,18 +20,14 @@ The indexing rake task can be run multiple times to pull in other data to you
 Blacklight app.
 
 
-# What the generator does (TODO)
+# What the generator does
 
 When you run `rails g blacklight_dpla` it does the following:
 
 1. Updates `app/controllers/catalog_controller.rb` with configuration for 
   appropriate facets, show view values, and field list.
 2. Updates the Solr configuration so that all *_facet fields are stored by default.
-3. Updates `app/views/catalog/_home_text.html.erb` with help text.
-
-# TODO
-
-- Create generator for adding facets and other config to catalog controller.
+3. TODO: Updates `app/views/catalog/_home_text.html.erb` with help text.
 
 # Author
 
