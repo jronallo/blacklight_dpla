@@ -15,7 +15,8 @@ module BlacklightDpla
     'language' => :language_facet,
     'checkouts' => :checkouts_facet,
     'content_link' => :content_link_display,
-    'audio_format_mp3' => :audio_format_mp3_display
+    'audio_format_mp3' => :audio_format_mp3_display,
+    'id_isbn' => :isbn_display
   }
   
 end
