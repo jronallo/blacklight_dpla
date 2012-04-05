@@ -14,7 +14,8 @@ module BlacklightDpla
     'title' => :title_display,
     'language' => :language_facet,
     'checkouts' => :checkouts_facet,
-    'content_link' => :content_link_display
+    'content_link' => :content_link_display,
+    'audio_format_mp3' => :audio_format_mp3_display
   }
   
 end

@@ -14,7 +14,15 @@ module BlacklightDpla
       solr_doc = {}
       doc.keys.each do |key|
         if SOLR_MAPPING.keys.include? key
-          solr_doc[SOLR_MAPPING[key]] = doc[key]
+          case key
+          when 'audio_format_mp3'
+            m3u = HTTParty.get(doc[key])
+            mp3 = m3u.split.first
+            solr_doc[SOLR_MAPPING[key]] = mp3
+            solr_doc['format'] = 'mp3'
+          else
+            solr_doc[SOLR_MAPPING[key]] = doc[key]
+          end
         end
       end
       solr_doc

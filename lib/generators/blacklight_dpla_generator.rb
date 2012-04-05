@@ -19,4 +19,9 @@ class BlacklightDplaGenerator < Rails::Generators::Base
       '<dynamicField name="*_facet" type="string" indexed="true" stored="true" multiValued="true" />'
   end
   
+  def change_default_app_name
+    insert_into_file 'app/helpers/application_helper.rb', "\n  def application_name\n    'Blacklight DPLA'\n  end\n",
+      :after => 'module ApplicationHelper'
+  end
+  
 end
