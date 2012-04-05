@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "Quickstart to a Blacklight app using DPLA Platform data."
   s.description = "Quickstart to a Blacklight app using DPLA Platform data."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.markdown"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "httparty"
