@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = BlacklightDpla::VERSION
   s.authors     = ["Jason Ronallo"]
   s.email       = ["jronallo@gmail.com"]
-  s.homepage    = "TODO"
+  s.homepage    = "https://github.com/jronallo/blacklight_dpla"
   s.summary     = "Quickstart to a Blacklight app using DPLA Platform data."
   s.description = "Quickstart to a Blacklight app using DPLA Platform data."
 
